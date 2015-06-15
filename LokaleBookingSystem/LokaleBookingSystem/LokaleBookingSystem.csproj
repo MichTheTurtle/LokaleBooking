@@ -65,6 +65,12 @@
     <Compile Include="BookingForm.Designer.cs">
       <DependentUpon>BookingForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="BrugerOversigtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BrugerOversigtForm.Designer.cs">
+      <DependentUpon>BrugerOversigtForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="BrugerRedigeringsForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,8 +106,13 @@
     <EmbeddedResource Include="AdminForm.resx">
       <DependentUpon>AdminForm.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="BookingForm.resx">
       <DependentUpon>BookingForm.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="BrugerOversigtForm.resx">
+      <DependentUpon>BrugerOversigtForm.cs</DependentUpon>
+>>>>>>> origin/master
     </EmbeddedResource>
     <EmbeddedResource Include="BrugerRedigeringsForm.resx">
       <DependentUpon>BrugerRedigeringsForm.cs</DependentUpon>

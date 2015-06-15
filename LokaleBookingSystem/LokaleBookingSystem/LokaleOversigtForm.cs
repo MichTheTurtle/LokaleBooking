@@ -24,8 +24,10 @@ namespace LokaleBookingSystem
             listView1.Columns.Add("ID");
             listView1.Columns.Add("Navn", 120);
 
+            listView1.FullRowSelect = true;
+
             //Add items in the listview
-            string[] arr = new string[3];
+            string[] arr = new string[2];
             ListViewItem itm;
 
 
@@ -36,7 +38,6 @@ namespace LokaleBookingSystem
 
                 foreach (var lokale in lokaler)
                 {
-                    listView1.FullRowSelect = true;
 
                     arr[0] = lokale.LokaleID.ToString();
                     arr[1] = lokale.LokaleNavn;
@@ -45,11 +46,6 @@ namespace LokaleBookingSystem
 
                 }
             }
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

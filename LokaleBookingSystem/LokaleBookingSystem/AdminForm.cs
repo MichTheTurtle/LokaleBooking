@@ -52,7 +52,8 @@ namespace LokaleBookingSystem
 
         private void btn_Bruger_View_Click(object sender, EventArgs e)
         {
-
+            BrugerOversigtForm bof = new BrugerOversigtForm();
+            bof.Show();
         }
     }
 }

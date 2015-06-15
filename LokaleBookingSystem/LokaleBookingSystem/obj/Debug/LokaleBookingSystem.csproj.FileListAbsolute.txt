@@ -59,4 +59,8 @@ C:\Users\Mich\Documents\GitHub\LokaleBooking\LokaleBookingSystem\LokaleBookingSy
 C:\Users\Mich\Documents\GitHub\LokaleBooking\LokaleBookingSystem\LokaleBookingSystem\obj\Debug\LokaleBookingSystem.exe
 C:\Users\Mich\Documents\GitHub\LokaleBooking\LokaleBookingSystem\LokaleBookingSystem\obj\Debug\LokaleBookingSystem.pdb
 C:\Users\Mich\Documents\GitHub\LokaleBooking\LokaleBookingSystem\LokaleBookingSystem\obj\Debug\LokaleBookingSystem.LokaleOversigtForm.resources
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
+C:\Users\Mich\Documents\GitHub\LokaleBooking\LokaleBookingSystem\LokaleBookingSystem\obj\Debug\LokaleBookingSystem.BrugerOversigtForm.resources
 >>>>>>> origin/master
