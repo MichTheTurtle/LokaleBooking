@@ -18,3 +18,13 @@ C:\Users\Minnimols\Documents\Visual Studio 2013\Projects\LokaleBookingSystem\Mod
 C:\Users\Minnimols\Documents\Visual Studio 2013\Projects\LokaleBookingSystem\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
 C:\Users\Minnimols\Documents\Visual Studio 2013\Projects\LokaleBookingSystem\Model\obj\Debug\Model.dll
 C:\Users\Minnimols\Documents\Visual Studio 2013\Projects\LokaleBookingSystem\Model\obj\Debug\Model.pdb
+C:\Users\Minnimols\Documents\GitHub\LokaleBooking\LokaleBookingSystem\Model\bin\Debug\Model.dll.config
+C:\Users\Minnimols\Documents\GitHub\LokaleBooking\LokaleBookingSystem\Model\bin\Debug\Model.dll
+C:\Users\Minnimols\Documents\GitHub\LokaleBooking\LokaleBookingSystem\Model\bin\Debug\Model.pdb
+C:\Users\Minnimols\Documents\GitHub\LokaleBooking\LokaleBookingSystem\Model\bin\Debug\EntityFramework.dll
+C:\Users\Minnimols\Documents\GitHub\LokaleBooking\LokaleBookingSystem\Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Minnimols\Documents\GitHub\LokaleBooking\LokaleBookingSystem\Model\bin\Debug\EntityFramework.xml
+C:\Users\Minnimols\Documents\GitHub\LokaleBooking\LokaleBookingSystem\Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Minnimols\Documents\GitHub\LokaleBooking\LokaleBookingSystem\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+C:\Users\Minnimols\Documents\GitHub\LokaleBooking\LokaleBookingSystem\Model\obj\Debug\Model.dll
+C:\Users\Minnimols\Documents\GitHub\LokaleBooking\LokaleBookingSystem\Model\obj\Debug\Model.pdb

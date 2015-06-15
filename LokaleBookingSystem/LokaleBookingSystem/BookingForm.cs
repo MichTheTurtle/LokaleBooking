@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Model;
 
 namespace LokaleBookingSystem
 {
@@ -15,6 +16,31 @@ namespace LokaleBookingSystem
         public BookingForm()
         {
             InitializeComponent();
+        }
+
+        private void BookingForm_Load(object sender, EventArgs e)
+        {
+            startDateTimePicker.Value = DateTime.Today;
+            slutDateTimePicker.Value = DateTime.Today;
+        }
+
+        private void btn_book_Click(object sender, EventArgs e)
+        {
+
+            using (var ctx = new Context())
+            {
+                Lokale lokale2 = (from s in ctx.Lokaler
+                                 where s.LokaleNavn == txtBx_Lokale.Text
+                                 select s).FirstOrDefault();
+
+                Bruger bruger2 = (from s in ctx.Brugere
+                                  where s.Username == LoginForm.Username
+                                  select s).FirstOrDefault();
+                
+                Booking booking = new Booking() { StartTidspunkt = startDateTimePicker.Value, SlutTidspunkt = slutDateTimePicker.Value, Lokale = lokale2, Bruger = bruger2 };
+                ctx.Bookings.Add(booking);
+                ctx.SaveChanges();
+            }
         }
     }
 }

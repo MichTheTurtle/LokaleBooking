@@ -60,7 +60,9 @@ namespace LokaleBookingSystem
 
         private void btn_Rediger_Booking_Click(object sender, EventArgs e)
         {
-
+            System.Threading.Thread bookingform = new System.Threading.Thread(() => Application.Run(new BookingForm()));
+            bookingform.Start();
+            this.Close();
         }
 
         private void btn_Booking_View_Click(object sender, EventArgs e)

@@ -17,3 +17,23 @@ C:\Users\Minnimols\documents\visual studio 2013\Projects\LokaleBookingSystem\Lok
 C:\Users\Minnimols\documents\visual studio 2013\Projects\LokaleBookingSystem\LokaleBookingSystem\obj\Debug\LokaleBookingSystem.AdminForm.resources
 C:\Users\Minnimols\documents\visual studio 2013\Projects\LokaleBookingSystem\LokaleBookingSystem\obj\Debug\LokaleBookingSystem.LokaleRedigeringsForm.resources
 C:\Users\Minnimols\documents\visual studio 2013\Projects\LokaleBookingSystem\LokaleBookingSystem\obj\Debug\LokaleBookingSystem.BrugerRedigeringsForm.resources
+C:\Users\Minnimols\Documents\GitHub\LokaleBooking\LokaleBookingSystem\LokaleBookingSystem\bin\Debug\LokaleBookingSystem.exe.config
+C:\Users\Minnimols\Documents\GitHub\LokaleBooking\LokaleBookingSystem\LokaleBookingSystem\obj\Debug\LokaleBookingSystem.exe
+C:\Users\Minnimols\Documents\GitHub\LokaleBooking\LokaleBookingSystem\LokaleBookingSystem\obj\Debug\LokaleBookingSystem.pdb
+C:\Users\Minnimols\Documents\GitHub\LokaleBooking\LokaleBookingSystem\LokaleBookingSystem\bin\Debug\LokaleBookingSystem.exe
+C:\Users\Minnimols\Documents\GitHub\LokaleBooking\LokaleBookingSystem\LokaleBookingSystem\bin\Debug\LokaleBookingSystem.pdb
+C:\Users\Minnimols\Documents\GitHub\LokaleBooking\LokaleBookingSystem\LokaleBookingSystem\bin\Debug\EntityFramework.dll
+C:\Users\Minnimols\Documents\GitHub\LokaleBooking\LokaleBookingSystem\LokaleBookingSystem\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Minnimols\Documents\GitHub\LokaleBooking\LokaleBookingSystem\LokaleBookingSystem\bin\Debug\Model.dll
+C:\Users\Minnimols\Documents\GitHub\LokaleBooking\LokaleBookingSystem\LokaleBookingSystem\bin\Debug\Model.pdb
+C:\Users\Minnimols\Documents\GitHub\LokaleBooking\LokaleBookingSystem\LokaleBookingSystem\bin\Debug\EntityFramework.xml
+C:\Users\Minnimols\Documents\GitHub\LokaleBooking\LokaleBookingSystem\LokaleBookingSystem\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Minnimols\Documents\GitHub\LokaleBooking\LokaleBookingSystem\LokaleBookingSystem\obj\Debug\LokaleBookingSystem.csprojResolveAssemblyReference.cache
+C:\Users\Minnimols\Documents\GitHub\LokaleBooking\LokaleBookingSystem\LokaleBookingSystem\obj\Debug\LokaleBookingSystem.AdminForm.resources
+C:\Users\Minnimols\Documents\GitHub\LokaleBooking\LokaleBookingSystem\LokaleBookingSystem\obj\Debug\LokaleBookingSystem.BrugerRedigeringsForm.resources
+C:\Users\Minnimols\Documents\GitHub\LokaleBooking\LokaleBookingSystem\LokaleBookingSystem\obj\Debug\LokaleBookingSystem.LoginForm.resources
+C:\Users\Minnimols\Documents\GitHub\LokaleBooking\LokaleBookingSystem\LokaleBookingSystem\obj\Debug\LokaleBookingSystem.LokaleRedigeringsForm.resources
+C:\Users\Minnimols\Documents\GitHub\LokaleBooking\LokaleBookingSystem\LokaleBookingSystem\obj\Debug\LokaleBookingSystem.Properties.Resources.resources
+C:\Users\Minnimols\Documents\GitHub\LokaleBooking\LokaleBookingSystem\LokaleBookingSystem\obj\Debug\LokaleBookingSystem.RegisterForm.resources
+C:\Users\Minnimols\Documents\GitHub\LokaleBooking\LokaleBookingSystem\LokaleBookingSystem\obj\Debug\LokaleBookingSystem.csproj.GenerateResource.Cache
+C:\Users\Minnimols\Documents\GitHub\LokaleBooking\LokaleBookingSystem\LokaleBookingSystem\obj\Debug\LokaleBookingSystem.BookingForm.resources
