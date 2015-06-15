@@ -50,8 +50,8 @@ namespace LokaleBookingSystem
                         }
                         else
                         {
-                            System.Threading.Thread lokaleform = new System.Threading.Thread(() => Application.Run(new LokaleRedigeringsForm()));
-                            lokaleform.Start();
+                            System.Threading.Thread brugerform = new System.Threading.Thread(() => Application.Run(new BrugerForm()));
+                            brugerform.Start();
                             Username = bruger.Username;
                             this.Close();
                         }

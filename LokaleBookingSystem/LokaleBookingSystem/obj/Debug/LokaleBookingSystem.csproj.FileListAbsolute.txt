@@ -59,3 +59,4 @@ C:\Users\Minnimols\Documents\GitHub\LokaleBooking\LokaleBookingSystem\LokaleBook
 C:\Users\Minnimols\Documents\GitHub\LokaleBooking\LokaleBookingSystem\LokaleBookingSystem\bin\Debug\Model.pdb
 C:\Users\Minnimols\Documents\GitHub\LokaleBooking\LokaleBookingSystem\LokaleBookingSystem\bin\Debug\EntityFramework.xml
 C:\Users\Minnimols\Documents\GitHub\LokaleBooking\LokaleBookingSystem\LokaleBookingSystem\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Minnimols\Documents\GitHub\LokaleBooking\LokaleBookingSystem\LokaleBookingSystem\obj\Debug\LokaleBookingSystem.BrugerForm.resources
