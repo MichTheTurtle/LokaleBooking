@@ -63,7 +63,5 @@ namespace LokaleBookingSystem
                 }
             }
         }
-
-
     }
 }
