@@ -18,6 +18,8 @@ namespace LokaleBookingSystem
             InitializeComponent();
         }
 
+        public static string Username { get; set; }
+
         private void btn_Register_Click(object sender, EventArgs e)
         {
             System.Threading.Thread registerform = new System.Threading.Thread(() => Application.Run(new RegisterForm()));
@@ -43,12 +45,14 @@ namespace LokaleBookingSystem
                         {
                             System.Threading.Thread adminform = new System.Threading.Thread(() => Application.Run(new AdminForm()));
                             adminform.Start();
+                            Username = bruger.Username;
                             this.Close();
                         }
                         else
                         {
                             System.Threading.Thread lokaleform = new System.Threading.Thread(() => Application.Run(new LokaleRedigeringsForm()));
                             lokaleform.Start();
+                            Username = bruger.Username;
                             this.Close();
                         }
                     }

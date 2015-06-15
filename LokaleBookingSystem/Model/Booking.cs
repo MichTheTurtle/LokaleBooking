@@ -12,7 +12,9 @@ namespace Model
     {
         public int BookingID { get; set; }
 
-        public DateTime Tidspunkt { get; set; }
+        public DateTime StartTidspunkt { get; set; }
+
+        public DateTime SlutTidspunkt { get; set; }
 
         public virtual Lokale Lokale { get; set; }
 
