@@ -19,6 +19,7 @@ namespace LokaleBookingSystem
         }
 
         public static string Username { get; set; }
+        public static string Rettighed { get; set; }
 
         private void btn_Register_Click(object sender, EventArgs e)
         {
@@ -46,6 +47,7 @@ namespace LokaleBookingSystem
                             System.Threading.Thread adminform = new System.Threading.Thread(() => Application.Run(new AdminForm()));
                             adminform.Start();
                             Username = bruger.Username;
+                            Rettighed = bruger.Rettidhed;
                             this.Close();
                         }
                         else
@@ -53,6 +55,7 @@ namespace LokaleBookingSystem
                             System.Threading.Thread brugerform = new System.Threading.Thread(() => Application.Run(new BrugerForm()));
                             brugerform.Start();
                             Username = bruger.Username;
+                            Rettighed = bruger.Rettidhed;
                             this.Close();
                         }
                     }

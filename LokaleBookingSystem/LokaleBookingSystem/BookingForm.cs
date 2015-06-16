@@ -37,9 +37,15 @@ namespace LokaleBookingSystem
                                   where s.Username == LoginForm.Username
                                   select s).FirstOrDefault();
 
-                Booking booking = new Booking() { StartTidspunkt = startDateTimePicker.Value, SlutTidspunkt = slutDateTimePicker.Value, Lokale = lokale2, Bruger = bruger2 };
-                ctx.Bookings.Add(booking);
-                ctx.SaveChanges();
+                if (lokale2 != null)
+                {
+                    Booking booking = new Booking() { StartTidspunkt = startDateTimePicker.Value, SlutTidspunkt = slutDateTimePicker.Value, Lokale = lokale2, Bruger = bruger2 };
+                    ctx.Bookings.Add(booking);
+                    ctx.SaveChanges();
+                }
+                else
+                    MessageBox.Show("Ugyldig lokale navn!");
+                
             }
         }
     }

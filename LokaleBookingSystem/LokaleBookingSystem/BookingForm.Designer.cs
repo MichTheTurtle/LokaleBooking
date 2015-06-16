@@ -84,7 +84,7 @@
             // 
             this.txtBx_Lokale.Location = new System.Drawing.Point(100, 70);
             this.txtBx_Lokale.Name = "txtBx_Lokale";
-            this.txtBx_Lokale.Size = new System.Drawing.Size(100, 20);
+            this.txtBx_Lokale.Size = new System.Drawing.Size(142, 20);
             this.txtBx_Lokale.TabIndex = 5;
             // 
             // label3

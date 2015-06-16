@@ -55,5 +55,39 @@ namespace LokaleBookingSystem
                 }
             }
         }
+
+        private void contextRightClick_Opening(object sender, CancelEventArgs e)
+        {
+            if (listView1.SelectedItems.Count > 0)
+                contextRightClick.Enabled = true;
+            else
+                contextRightClick.Enabled = false;
+        }
+
+        private void sletBrugerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int brugerID = Convert.ToInt32(listView1.SelectedItems[0].SubItems[0].Text);
+            using (var ctx = new Context())
+            {
+                Bruger bruger = ctx.Brugere.Where(b => b.BrugerID == brugerID).First();
+                ctx.Brugere.Remove(bruger);
+                ctx.SaveChanges();
+                listView1.Items.RemoveAt(listView1.SelectedItems[0].Index);
+            }
+        }
+
+        private void givAdminToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int brugerID = Convert.ToInt32(listView1.SelectedItems[0].SubItems[0].Text);
+            using (var ctx = new Context())
+            {
+                Bruger bruger = (from s in ctx.Brugere
+                                 where s.BrugerID == brugerID
+                                 select s).FirstOrDefault();
+                bruger.Rettidhed = "Admin";
+                ctx.SaveChanges();
+                listView1.SelectedItems[0].SubItems[5].Text = "Admin";
+            }
+        }
     }
 }

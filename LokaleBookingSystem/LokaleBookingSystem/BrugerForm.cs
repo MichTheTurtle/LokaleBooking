@@ -32,8 +32,8 @@ namespace LokaleBookingSystem
 
         private void btn_Booking_View_Click(object sender, EventArgs e)
         {
-
+            BookingOversigtForm bof = new BookingOversigtForm();
+            bof.Show();
         }
-
     }
 }

@@ -53,7 +53,7 @@
             this.grp_Lokale.Location = new System.Drawing.Point(12, 12);
             this.grp_Lokale.Name = "grp_Lokale";
             this.grp_Lokale.Size = new System.Drawing.Size(124, 113);
-            this.grp_Lokale.TabIndex = 8;
+            this.grp_Lokale.TabIndex = 6;
             this.grp_Lokale.TabStop = false;
             this.grp_Lokale.Text = "Lokale";
             // 
@@ -74,7 +74,7 @@
             this.grp_Booking.Location = new System.Drawing.Point(148, 12);
             this.grp_Booking.Name = "grp_Booking";
             this.grp_Booking.Size = new System.Drawing.Size(124, 113);
-            this.grp_Booking.TabIndex = 7;
+            this.grp_Booking.TabIndex = 4;
             this.grp_Booking.TabStop = false;
             this.grp_Booking.Text = "Booking";
             // 
@@ -110,5 +110,6 @@
         private System.Windows.Forms.Button btn_View_Lokale;
         private System.Windows.Forms.GroupBox grp_Booking;
         private System.Windows.Forms.Button btn_Booking_View;
+
     }
 }

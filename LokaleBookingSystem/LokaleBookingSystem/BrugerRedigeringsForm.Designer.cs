@@ -38,9 +38,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btn_Opret = new System.Windows.Forms.Button();
             this.btn_Rediger = new System.Windows.Forms.Button();
             this.btn_Slet = new System.Windows.Forms.Button();
+            this.txtBx_Rettighed = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtBx_Password
@@ -91,7 +92,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(13, 15);
+            this.label4.Location = new System.Drawing.Point(15, 15);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(58, 13);
             this.label4.TabIndex = 13;
@@ -118,29 +119,21 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(14, 67);
+            this.label1.Location = new System.Drawing.Point(15, 67);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(49, 13);
             this.label1.TabIndex = 10;
             this.label1.Text = "Fornavn:";
             // 
-            // btn_Opret
-            // 
-            this.btn_Opret.Location = new System.Drawing.Point(62, 142);
-            this.btn_Opret.Name = "btn_Opret";
-            this.btn_Opret.Size = new System.Drawing.Size(75, 23);
-            this.btn_Opret.TabIndex = 20;
-            this.btn_Opret.Text = "Opret";
-            this.btn_Opret.UseVisualStyleBackColor = true;
-            // 
             // btn_Rediger
             // 
-            this.btn_Rediger.Location = new System.Drawing.Point(143, 142);
+            this.btn_Rediger.Location = new System.Drawing.Point(64, 169);
             this.btn_Rediger.Name = "btn_Rediger";
             this.btn_Rediger.Size = new System.Drawing.Size(75, 23);
-            this.btn_Rediger.TabIndex = 21;
+            this.btn_Rediger.TabIndex = 20;
             this.btn_Rediger.Text = "Rediger";
             this.btn_Rediger.UseVisualStyleBackColor = true;
+            this.btn_Rediger.Click += new System.EventHandler(this.btn_Rediger_Click);
             // 
             // btn_Slet
             // 
@@ -150,15 +143,33 @@
             this.btn_Slet.TabIndex = 22;
             this.btn_Slet.Text = "Slet";
             this.btn_Slet.UseVisualStyleBackColor = true;
+            this.btn_Slet.Click += new System.EventHandler(this.btn_Slet_Click);
+            // 
+            // txtBx_Rettighed
+            // 
+            this.txtBx_Rettighed.Location = new System.Drawing.Point(81, 142);
+            this.txtBx_Rettighed.Name = "txtBx_Rettighed";
+            this.txtBx_Rettighed.Size = new System.Drawing.Size(142, 20);
+            this.txtBx_Rettighed.TabIndex = 23;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(15, 145);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(56, 13);
+            this.label6.TabIndex = 24;
+            this.label6.Text = "Rettighed:";
             // 
             // BrugerRedigeringsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(266, 172);
+            this.ClientSize = new System.Drawing.Size(266, 204);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.txtBx_Rettighed);
             this.Controls.Add(this.btn_Slet);
             this.Controls.Add(this.btn_Rediger);
-            this.Controls.Add(this.btn_Opret);
             this.Controls.Add(this.txtBx_Password);
             this.Controls.Add(this.txtBx_Username);
             this.Controls.Add(this.txtBx_Mail);
@@ -188,9 +199,10 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btn_Opret;
         private System.Windows.Forms.Button btn_Rediger;
         private System.Windows.Forms.Button btn_Slet;
+        private System.Windows.Forms.TextBox txtBx_Rettighed;
+        private System.Windows.Forms.Label label6;
 
     }
 }

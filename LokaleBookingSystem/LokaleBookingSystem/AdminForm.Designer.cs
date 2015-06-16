@@ -32,10 +32,9 @@
             this.btn_Rediger_Booking = new System.Windows.Forms.Button();
             this.btn_Rediger_Bruger = new System.Windows.Forms.Button();
             this.grp_Lokale = new System.Windows.Forms.GroupBox();
+            this.btn_View_Lokale = new System.Windows.Forms.Button();
             this.grp_Booking = new System.Windows.Forms.GroupBox();
             this.grp_Bruger = new System.Windows.Forms.GroupBox();
-            this.btn_View_Lokale = new System.Windows.Forms.Button();
-            this.btn_Booking_View = new System.Windows.Forms.Button();
             this.btn_Bruger_View = new System.Windows.Forms.Button();
             this.grp_Lokale.SuspendLayout();
             this.grp_Booking.SuspendLayout();
@@ -83,9 +82,18 @@
             this.grp_Lokale.TabStop = false;
             this.grp_Lokale.Text = "Lokale";
             // 
+            // btn_View_Lokale
+            // 
+            this.btn_View_Lokale.Location = new System.Drawing.Point(6, 60);
+            this.btn_View_Lokale.Name = "btn_View_Lokale";
+            this.btn_View_Lokale.Size = new System.Drawing.Size(93, 23);
+            this.btn_View_Lokale.TabIndex = 4;
+            this.btn_View_Lokale.Text = "Se liste";
+            this.btn_View_Lokale.UseVisualStyleBackColor = true;
+            this.btn_View_Lokale.Click += new System.EventHandler(this.btn_View_Lokale_Click);
+            // 
             // grp_Booking
             // 
-            this.grp_Booking.Controls.Add(this.btn_Booking_View);
             this.grp_Booking.Controls.Add(this.btn_Rediger_Booking);
             this.grp_Booking.Location = new System.Drawing.Point(148, 12);
             this.grp_Booking.Name = "grp_Booking";
@@ -104,26 +112,6 @@
             this.grp_Bruger.TabIndex = 2;
             this.grp_Bruger.TabStop = false;
             this.grp_Bruger.Text = "Bruger";
-            // 
-            // btn_View_Lokale
-            // 
-            this.btn_View_Lokale.Location = new System.Drawing.Point(6, 60);
-            this.btn_View_Lokale.Name = "btn_View_Lokale";
-            this.btn_View_Lokale.Size = new System.Drawing.Size(93, 23);
-            this.btn_View_Lokale.TabIndex = 4;
-            this.btn_View_Lokale.Text = "Se liste";
-            this.btn_View_Lokale.UseVisualStyleBackColor = true;
-            this.btn_View_Lokale.Click += new System.EventHandler(this.btn_View_Lokale_Click);
-            // 
-            // btn_Booking_View
-            // 
-            this.btn_Booking_View.Location = new System.Drawing.Point(8, 60);
-            this.btn_Booking_View.Name = "btn_Booking_View";
-            this.btn_Booking_View.Size = new System.Drawing.Size(93, 23);
-            this.btn_Booking_View.TabIndex = 5;
-            this.btn_Booking_View.Text = "Se liste";
-            this.btn_Booking_View.UseVisualStyleBackColor = true;
-            this.btn_Booking_View.Click += new System.EventHandler(this.btn_Booking_View_Click);
             // 
             // btn_Bruger_View
             // 
@@ -160,7 +148,6 @@
         private System.Windows.Forms.GroupBox grp_Lokale;
         private System.Windows.Forms.GroupBox grp_Booking;
         private System.Windows.Forms.Button btn_View_Lokale;
-        private System.Windows.Forms.Button btn_Booking_View;
         private System.Windows.Forms.GroupBox grp_Bruger;
         private System.Windows.Forms.Button btn_Bruger_View;
     }
