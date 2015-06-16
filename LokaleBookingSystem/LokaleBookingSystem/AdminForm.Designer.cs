@@ -36,6 +36,7 @@
             this.grp_Booking = new System.Windows.Forms.GroupBox();
             this.grp_Bruger = new System.Windows.Forms.GroupBox();
             this.btn_Bruger_View = new System.Windows.Forms.Button();
+            this.btn_export_xml = new System.Windows.Forms.Button();
             this.grp_Lokale.SuspendLayout();
             this.grp_Booking.SuspendLayout();
             this.grp_Bruger.SuspendLayout();
@@ -94,6 +95,7 @@
             // 
             // grp_Booking
             // 
+            this.grp_Booking.Controls.Add(this.btn_export_xml);
             this.grp_Booking.Controls.Add(this.btn_Rediger_Booking);
             this.grp_Booking.Location = new System.Drawing.Point(148, 12);
             this.grp_Booking.Name = "grp_Booking";
@@ -123,6 +125,16 @@
             this.btn_Bruger_View.UseVisualStyleBackColor = true;
             this.btn_Bruger_View.Click += new System.EventHandler(this.btn_Bruger_View_Click);
             // 
+            // btn_export_xml
+            // 
+            this.btn_export_xml.Location = new System.Drawing.Point(8, 60);
+            this.btn_export_xml.Name = "btn_export_xml";
+            this.btn_export_xml.Size = new System.Drawing.Size(93, 23);
+            this.btn_export_xml.TabIndex = 2;
+            this.btn_export_xml.Text = "Export to XML";
+            this.btn_export_xml.UseVisualStyleBackColor = true;
+            this.btn_export_xml.Click += new System.EventHandler(this.btn_export_xml_Click);
+            // 
             // AdminForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -150,5 +162,6 @@
         private System.Windows.Forms.Button btn_View_Lokale;
         private System.Windows.Forms.GroupBox grp_Bruger;
         private System.Windows.Forms.Button btn_Bruger_View;
+        private System.Windows.Forms.Button btn_export_xml;
     }
 }

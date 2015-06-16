@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Model;
+using System.Xml.Serialization;
+using System.IO;
 
 namespace LokaleBookingSystem
 {
@@ -48,6 +50,38 @@ namespace LokaleBookingSystem
         {
             BrugerOversigtForm bof = new BrugerOversigtForm();
             bof.Show();
+        }
+
+        private void btn_export_xml_Click(object sender, EventArgs e)
+        {
+            List<BookingDetails> BookingList = new List<BookingDetails>();
+
+            using (var ctx = new Context())
+            {
+                var bookings = from b in ctx.Bookings select b;
+
+                foreach (var booking in bookings)
+                {
+                    BookingDetails detail = new BookingDetails();
+                    detail.ID = booking.BookingID;
+                    detail.StartTidspunkt = booking.StartTidspunkt;
+                    detail.SlutTidspunkt = booking.SlutTidspunkt;
+                    detail.Lokale = booking.Lokale;
+                    detail.BrugerID = booking.Bruger.BrugerID;
+                    detail.Navn = booking.Bruger.Fornavn + " " + booking.Bruger.Efternavn;
+                    BookingList.Add(detail);
+                }
+            }
+            Serialize(BookingList);
+        }
+
+        public void Serialize(List<BookingDetails> list)
+        {
+            XmlSerializer serializer = new XmlSerializer(typeof(List<BookingDetails>));
+            using (TextWriter writer = new StreamWriter(@"C:\bookings.xml"))
+            {
+                serializer.Serialize(writer, list);
+            }
         }
     }
 }

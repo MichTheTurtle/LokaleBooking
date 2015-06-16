@@ -57,6 +57,7 @@
     <Compile Include="AdminForm.Designer.cs">
       <DependentUpon>AdminForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="BookingDetails.cs" />
     <Compile Include="BookingForm.cs">
       <SubType>Form</SubType>
     </Compile>
