@@ -33,8 +33,11 @@
             this.btn_View_Lokale = new System.Windows.Forms.Button();
             this.grp_Booking = new System.Windows.Forms.GroupBox();
             this.btn_Booking_View = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btn_Logout = new System.Windows.Forms.Button();
             this.grp_Lokale.SuspendLayout();
             this.grp_Booking.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_Rediger_Booking
@@ -88,17 +91,39 @@
             this.btn_Booking_View.UseVisualStyleBackColor = true;
             this.btn_Booking_View.Click += new System.EventHandler(this.btn_Booking_View_Click);
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.btn_Logout);
+            this.groupBox1.Location = new System.Drawing.Point(148, 137);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(124, 113);
+            this.groupBox1.TabIndex = 7;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Account";
+            // 
+            // btn_Logout
+            // 
+            this.btn_Logout.Location = new System.Drawing.Point(8, 19);
+            this.btn_Logout.Name = "btn_Logout";
+            this.btn_Logout.Size = new System.Drawing.Size(93, 23);
+            this.btn_Logout.TabIndex = 0;
+            this.btn_Logout.Text = "Log ud";
+            this.btn_Logout.UseVisualStyleBackColor = true;
+            this.btn_Logout.Click += new System.EventHandler(this.btn_Logout_Click);
+            // 
             // BrugerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.grp_Lokale);
             this.Controls.Add(this.grp_Booking);
             this.Name = "BrugerForm";
             this.Text = "BrugerForm";
             this.grp_Lokale.ResumeLayout(false);
             this.grp_Booking.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -110,6 +135,8 @@
         private System.Windows.Forms.Button btn_View_Lokale;
         private System.Windows.Forms.GroupBox grp_Booking;
         private System.Windows.Forms.Button btn_Booking_View;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button btn_Logout;
 
     }
 }

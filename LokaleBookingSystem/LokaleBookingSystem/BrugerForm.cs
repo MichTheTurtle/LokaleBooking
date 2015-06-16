@@ -27,13 +27,19 @@ namespace LokaleBookingSystem
         {
             System.Threading.Thread bookingform = new System.Threading.Thread(() => Application.Run(new BookingForm()));
             bookingform.Start();
-            this.Close();
         }
 
         private void btn_Booking_View_Click(object sender, EventArgs e)
         {
             BookingOversigtForm bof = new BookingOversigtForm();
             bof.Show();
+        }
+
+        private void btn_Logout_Click(object sender, EventArgs e)
+        {
+            System.Threading.Thread loginform = new System.Threading.Thread(() => Application.Run(new LoginForm()));
+            loginform.Start();
+            this.Close();
         }
     }
 }

@@ -30,16 +30,18 @@
         {
             this.btn_Rediger_Lokale = new System.Windows.Forms.Button();
             this.btn_Rediger_Booking = new System.Windows.Forms.Button();
-            this.btn_Rediger_Bruger = new System.Windows.Forms.Button();
             this.grp_Lokale = new System.Windows.Forms.GroupBox();
             this.btn_View_Lokale = new System.Windows.Forms.Button();
             this.grp_Booking = new System.Windows.Forms.GroupBox();
+            this.btn_export_xml = new System.Windows.Forms.Button();
             this.grp_Bruger = new System.Windows.Forms.GroupBox();
             this.btn_Bruger_View = new System.Windows.Forms.Button();
-            this.btn_export_xml = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btn_Logout = new System.Windows.Forms.Button();
             this.grp_Lokale.SuspendLayout();
             this.grp_Booking.SuspendLayout();
             this.grp_Bruger.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_Rediger_Lokale
@@ -61,16 +63,6 @@
             this.btn_Rediger_Booking.Text = "Rediger";
             this.btn_Rediger_Booking.UseVisualStyleBackColor = true;
             this.btn_Rediger_Booking.Click += new System.EventHandler(this.btn_Rediger_Booking_Click);
-            // 
-            // btn_Rediger_Bruger
-            // 
-            this.btn_Rediger_Bruger.Location = new System.Drawing.Point(6, 19);
-            this.btn_Rediger_Bruger.Name = "btn_Rediger_Bruger";
-            this.btn_Rediger_Bruger.Size = new System.Drawing.Size(93, 23);
-            this.btn_Rediger_Bruger.TabIndex = 2;
-            this.btn_Rediger_Bruger.Text = "Rediger";
-            this.btn_Rediger_Bruger.UseVisualStyleBackColor = true;
-            this.btn_Rediger_Bruger.Click += new System.EventHandler(this.btn_Rediger_Bruger_Click);
             // 
             // grp_Lokale
             // 
@@ -104,27 +96,6 @@
             this.grp_Booking.TabStop = false;
             this.grp_Booking.Text = "Booking";
             // 
-            // grp_Bruger
-            // 
-            this.grp_Bruger.Controls.Add(this.btn_Bruger_View);
-            this.grp_Bruger.Controls.Add(this.btn_Rediger_Bruger);
-            this.grp_Bruger.Location = new System.Drawing.Point(12, 137);
-            this.grp_Bruger.Name = "grp_Bruger";
-            this.grp_Bruger.Size = new System.Drawing.Size(124, 113);
-            this.grp_Bruger.TabIndex = 2;
-            this.grp_Bruger.TabStop = false;
-            this.grp_Bruger.Text = "Bruger";
-            // 
-            // btn_Bruger_View
-            // 
-            this.btn_Bruger_View.Location = new System.Drawing.Point(6, 61);
-            this.btn_Bruger_View.Name = "btn_Bruger_View";
-            this.btn_Bruger_View.Size = new System.Drawing.Size(93, 23);
-            this.btn_Bruger_View.TabIndex = 6;
-            this.btn_Bruger_View.Text = "Se liste";
-            this.btn_Bruger_View.UseVisualStyleBackColor = true;
-            this.btn_Bruger_View.Click += new System.EventHandler(this.btn_Bruger_View_Click);
-            // 
             // btn_export_xml
             // 
             this.btn_export_xml.Location = new System.Drawing.Point(8, 60);
@@ -135,11 +106,52 @@
             this.btn_export_xml.UseVisualStyleBackColor = true;
             this.btn_export_xml.Click += new System.EventHandler(this.btn_export_xml_Click);
             // 
+            // grp_Bruger
+            // 
+            this.grp_Bruger.Controls.Add(this.btn_Bruger_View);
+            this.grp_Bruger.Location = new System.Drawing.Point(12, 137);
+            this.grp_Bruger.Name = "grp_Bruger";
+            this.grp_Bruger.Size = new System.Drawing.Size(124, 113);
+            this.grp_Bruger.TabIndex = 2;
+            this.grp_Bruger.TabStop = false;
+            this.grp_Bruger.Text = "Bruger";
+            // 
+            // btn_Bruger_View
+            // 
+            this.btn_Bruger_View.Location = new System.Drawing.Point(6, 19);
+            this.btn_Bruger_View.Name = "btn_Bruger_View";
+            this.btn_Bruger_View.Size = new System.Drawing.Size(93, 23);
+            this.btn_Bruger_View.TabIndex = 6;
+            this.btn_Bruger_View.Text = "Rediger";
+            this.btn_Bruger_View.UseVisualStyleBackColor = true;
+            this.btn_Bruger_View.Click += new System.EventHandler(this.btn_Bruger_View_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.btn_Logout);
+            this.groupBox1.Location = new System.Drawing.Point(148, 137);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(124, 113);
+            this.groupBox1.TabIndex = 8;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Account";
+            // 
+            // btn_Logout
+            // 
+            this.btn_Logout.Location = new System.Drawing.Point(8, 19);
+            this.btn_Logout.Name = "btn_Logout";
+            this.btn_Logout.Size = new System.Drawing.Size(93, 23);
+            this.btn_Logout.TabIndex = 0;
+            this.btn_Logout.Text = "Log ud";
+            this.btn_Logout.UseVisualStyleBackColor = true;
+            this.btn_Logout.Click += new System.EventHandler(this.btn_Logout_Click);
+            // 
             // AdminForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.grp_Bruger);
             this.Controls.Add(this.grp_Booking);
             this.Controls.Add(this.grp_Lokale);
@@ -148,6 +160,7 @@
             this.grp_Lokale.ResumeLayout(false);
             this.grp_Booking.ResumeLayout(false);
             this.grp_Bruger.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -156,12 +169,13 @@
 
         private System.Windows.Forms.Button btn_Rediger_Lokale;
         private System.Windows.Forms.Button btn_Rediger_Booking;
-        private System.Windows.Forms.Button btn_Rediger_Bruger;
         private System.Windows.Forms.GroupBox grp_Lokale;
         private System.Windows.Forms.GroupBox grp_Booking;
         private System.Windows.Forms.Button btn_View_Lokale;
         private System.Windows.Forms.GroupBox grp_Bruger;
         private System.Windows.Forms.Button btn_Bruger_View;
         private System.Windows.Forms.Button btn_export_xml;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button btn_Logout;
     }
 }

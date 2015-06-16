@@ -39,13 +39,6 @@ namespace LokaleBookingSystem
             bookingoversigtform.Start();
         }
 
-        private void btn_Rediger_Bruger_Click(object sender, EventArgs e)
-        {
-            System.Threading.Thread registerform = new System.Threading.Thread(() => Application.Run(new RegisterForm()));
-            registerform.Start();
-            this.Close();
-        }
-
         private void btn_Bruger_View_Click(object sender, EventArgs e)
         {
             BrugerOversigtForm bof = new BrugerOversigtForm();
@@ -82,6 +75,13 @@ namespace LokaleBookingSystem
             {
                 serializer.Serialize(writer, list);
             }
+        }
+
+        private void btn_Logout_Click(object sender, EventArgs e)
+        {
+            System.Threading.Thread loginform = new System.Threading.Thread(() => Application.Run(new LoginForm()));
+            loginform.Start();
+            this.Close();
         }
     }
 }

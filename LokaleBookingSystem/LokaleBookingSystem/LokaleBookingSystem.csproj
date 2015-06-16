@@ -88,12 +88,6 @@
     <Compile Include="BrugerOversigtForm.Designer.cs">
       <DependentUpon>BrugerOversigtForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="BrugerRedigeringsForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="BrugerRedigeringsForm.Designer.cs">
-      <DependentUpon>BrugerRedigeringsForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,9 +131,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BrugerOversigtForm.resx">
       <DependentUpon>BrugerOversigtForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="BrugerRedigeringsForm.resx">
-      <DependentUpon>BrugerRedigeringsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
