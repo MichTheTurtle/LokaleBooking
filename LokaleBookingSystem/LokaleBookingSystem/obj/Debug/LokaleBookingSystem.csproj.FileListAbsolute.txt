@@ -44,7 +44,6 @@ C:\Users\Minnimols\Documents\GitHub\LokaleBooking\LokaleBookingSystem\LokaleBook
 C:\Users\Minnimols\Documents\GitHub\LokaleBooking\LokaleBookingSystem\LokaleBookingSystem\obj\Debug\LokaleBookingSystem.csprojResolveAssemblyReference.cache
 C:\Users\Minnimols\Documents\GitHub\LokaleBooking\LokaleBookingSystem\LokaleBookingSystem\obj\Debug\LokaleBookingSystem.AdminForm.resources
 C:\Users\Minnimols\Documents\GitHub\LokaleBooking\LokaleBookingSystem\LokaleBookingSystem\obj\Debug\LokaleBookingSystem.BrugerOversigtForm.resources
-C:\Users\Minnimols\Documents\GitHub\LokaleBooking\LokaleBookingSystem\LokaleBookingSystem\obj\Debug\LokaleBookingSystem.BrugerRedigeringsForm.resources
 C:\Users\Minnimols\Documents\GitHub\LokaleBooking\LokaleBookingSystem\LokaleBookingSystem\obj\Debug\LokaleBookingSystem.LoginForm.resources
 C:\Users\Minnimols\Documents\GitHub\LokaleBooking\LokaleBookingSystem\LokaleBookingSystem\obj\Debug\LokaleBookingSystem.LokaleOversigtForm.resources
 C:\Users\Minnimols\Documents\GitHub\LokaleBooking\LokaleBookingSystem\LokaleBookingSystem\obj\Debug\LokaleBookingSystem.LokaleRedigeringsForm.resources
@@ -64,3 +63,6 @@ C:\Users\Mich\Documents\GitHub\LokaleBooking\LokaleBookingSystem\LokaleBookingSy
 C:\Users\Mich\Documents\GitHub\LokaleBooking\LokaleBookingSystem\LokaleBookingSystem\obj\Debug\LokaleBookingSystem.BookingOversigtForm.resources
 C:\Users\Mich\Documents\GitHub\LokaleBooking\LokaleBookingSystem\LokaleBookingSystem\obj\Debug\LokaleBookingSystem.BookingRedigeringsForm.resources
 C:\Users\Mich\Documents\GitHub\LokaleBooking\LokaleBookingSystem\LokaleBookingSystem\obj\Debug\LokaleBookingSystem.BrugerForm.resources
+C:\Users\Minnimols\Documents\GitHub\LokaleBooking\LokaleBookingSystem\LokaleBookingSystem\obj\Debug\LokaleBookingSystem.BookingForm.resources
+C:\Users\Minnimols\Documents\GitHub\LokaleBooking\LokaleBookingSystem\LokaleBookingSystem\obj\Debug\LokaleBookingSystem.BookingOversigtForm.resources
+C:\Users\Minnimols\Documents\GitHub\LokaleBooking\LokaleBookingSystem\LokaleBookingSystem\obj\Debug\LokaleBookingSystem.BookingRedigeringsForm.resources

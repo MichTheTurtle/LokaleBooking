@@ -39,7 +39,7 @@ namespace LokaleBookingSystem
 
                 if (lokale2 != null)
                 {
-                    Booking booking = new Booking() { StartTidspunkt = startDateTimePicker.Value, SlutTidspunkt = slutDateTimePicker.Value, Lokale = lokale2, Bruger = bruger2 };
+                    Booking booking = new Booking() { StartTidspunkt = startDateTimePicker.Value, SlutTidspunkt = slutDateTimePicker.Value, Lokale = lokale2, Bruger = bruger2, SendtMail = false };
                     ctx.Bookings.Add(booking);
                     ctx.SaveChanges();
                 }

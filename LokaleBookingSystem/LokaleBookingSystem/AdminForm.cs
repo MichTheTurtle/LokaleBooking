@@ -24,7 +24,6 @@ namespace LokaleBookingSystem
         {
             System.Threading.Thread registerform = new System.Threading.Thread(() => Application.Run(new LokaleRedigeringsForm()));
             registerform.Start();
-            this.Close();
         }
 
         private void btn_View_Lokale_Click(object sender, EventArgs e)

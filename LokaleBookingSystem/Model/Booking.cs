@@ -20,5 +20,6 @@ namespace Model
 
         public virtual Bruger Bruger { get; set; }
 
+        public bool SendtMail { get; set; }
     }
 }

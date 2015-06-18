@@ -179,7 +179,7 @@
             this.btn_Create.UseVisualStyleBackColor = true;
             this.btn_Create.Click += new System.EventHandler(this.btn_Create_Click);
             // 
-            // LokaleForm
+            // LokaleRedigeringsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -187,7 +187,7 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Name = "LokaleForm";
+            this.Name = "LokaleRedigeringsForm";
             this.Text = "MainForm";
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
