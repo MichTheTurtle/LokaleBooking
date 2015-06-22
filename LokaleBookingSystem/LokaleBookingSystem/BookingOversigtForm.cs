@@ -67,9 +67,9 @@ namespace LokaleBookingSystem
         private void redigerBookingToolStripMenuItem_Click(object sender, EventArgs e)
         {
                 int bookingID = Convert.ToInt32(listView1.SelectedItems[0].SubItems[0].Text);
-                string lokale = listView1.SelectedItems[0].SubItems[2].Text;
-                DateTime start = DateTime.Parse(listView1.SelectedItems[0].SubItems[3].Text);
-                DateTime slut = DateTime.Parse(listView1.SelectedItems[0].SubItems[4].Text);
+                string lokale = listView1.SelectedItems[0].SubItems[3].Text;
+                DateTime start = DateTime.Parse(listView1.SelectedItems[0].SubItems[4].Text);
+                DateTime slut = DateTime.Parse(listView1.SelectedItems[0].SubItems[5].Text);
                 System.Threading.Thread bookingredigerform = new System.Threading.Thread(() => Application.Run(new BookingRedigeringsForm(bookingID, lokale, start, slut)));
                 bookingredigerform.Start();
                 this.Close();

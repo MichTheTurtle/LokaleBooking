@@ -20,7 +20,6 @@ C:\Users\Minnimols\documents\visual studio 2013\Projects\LokaleBookingSystem\Lok
 C:\Users\Mich\Documents\GitHub\LokaleBooking\LokaleBookingSystem\LokaleBookingSystem\bin\Debug\LokaleBookingSystem.exe.config
 C:\Users\Mich\Documents\GitHub\LokaleBooking\LokaleBookingSystem\LokaleBookingSystem\obj\Debug\LokaleBookingSystem.csprojResolveAssemblyReference.cache
 C:\Users\Mich\Documents\GitHub\LokaleBooking\LokaleBookingSystem\LokaleBookingSystem\obj\Debug\LokaleBookingSystem.AdminForm.resources
-C:\Users\Mich\Documents\GitHub\LokaleBooking\LokaleBookingSystem\LokaleBookingSystem\obj\Debug\LokaleBookingSystem.BrugerRedigeringsForm.resources
 C:\Users\Mich\Documents\GitHub\LokaleBooking\LokaleBookingSystem\LokaleBookingSystem\obj\Debug\LokaleBookingSystem.LoginForm.resources
 C:\Users\Mich\Documents\GitHub\LokaleBooking\LokaleBookingSystem\LokaleBookingSystem\obj\Debug\LokaleBookingSystem.LokaleRedigeringsForm.resources
 C:\Users\Mich\Documents\GitHub\LokaleBooking\LokaleBookingSystem\LokaleBookingSystem\obj\Debug\LokaleBookingSystem.Properties.Resources.resources
