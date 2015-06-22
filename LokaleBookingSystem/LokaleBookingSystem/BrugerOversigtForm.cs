@@ -35,7 +35,7 @@ namespace LokaleBookingSystem
 
 
 
-            using (var ctx = new Context())
+            using (var ctx = new Context(Properties.Settings.Default.sqlDB))
             {
                 var brugere = from b in ctx.Brugere select b;
 
@@ -67,7 +67,7 @@ namespace LokaleBookingSystem
         private void sletBrugerToolStripMenuItem_Click(object sender, EventArgs e)
         {
             int brugerID = Convert.ToInt32(listView1.SelectedItems[0].SubItems[0].Text);
-            using (var ctx = new Context())
+            using (var ctx = new Context(Properties.Settings.Default.sqlDB))
             {
                 Bruger bruger = ctx.Brugere.Where(b => b.BrugerID == brugerID).First();
                 ctx.Brugere.Remove(bruger);
@@ -79,7 +79,7 @@ namespace LokaleBookingSystem
         private void givAdminToolStripMenuItem_Click(object sender, EventArgs e)
         {
             int brugerID = Convert.ToInt32(listView1.SelectedItems[0].SubItems[0].Text);
-            using (var ctx = new Context())
+            using (var ctx = new Context(Properties.Settings.Default.sqlDB))
             {
                 Bruger bruger = (from s in ctx.Brugere
                                  where s.BrugerID == brugerID

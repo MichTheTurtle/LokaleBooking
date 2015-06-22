@@ -23,6 +23,7 @@ namespace LokaleBookingSystem
 
             listView1.Columns.Add("BookingID", 70);
             listView1.Columns.Add("UserName", 70);
+            listView1.Columns.Add("Påmindelse", 80);
             listView1.Columns.Add("LokaleNavn", 80);
             listView1.Columns.Add("Start", 80);
             listView1.Columns.Add("Slut", 80);
@@ -30,22 +31,22 @@ namespace LokaleBookingSystem
             listView1.FullRowSelect = true;
 
             //Add items in the listview
-            string[] arr = new string[5];
+            string[] arr = new string[6];
             ListViewItem itm;
 
-            using (var ctx = new Context())
+            using (var ctx = new Context(Properties.Settings.Default.sqlDB))
             {
                 var bookings = from b in ctx.Bookings select b;
 
-                Bruger bruger = ctx.Brugere.Where(b => b.Username == LoginForm.Username).First();
-
                 foreach (var book in bookings)
                 {
+                    Bruger user = book.Bruger;
                     arr[0] = book.BookingID.ToString();
-                    arr[1] = book.Bruger.Username;
-                    arr[2] = book.Lokale.LokaleNavn;
-                    arr[3] = book.StartTidspunkt.ToString("dd-MM-yyyy");
-                    arr[4] = book.SlutTidspunkt.ToString("dd-MM-yyyy");
+                    arr[1] = book.Bruger.Username.ToString();
+                    arr[2] = book.SendtMail.ToString();
+                    arr[3] = book.Lokale.LokaleNavn;
+                    arr[4] = book.StartTidspunkt.ToString("dd-MM-yyyy");
+                    arr[5] = book.SlutTidspunkt.ToString("dd-MM-yyyy");
                     if (LoginForm.Rettighed != "Admin")
                     {
                         if (book.Bruger.Username == LoginForm.Username)
@@ -77,7 +78,7 @@ namespace LokaleBookingSystem
         private void sletBookingToolStripMenuItem_Click(object sender, EventArgs e)
         {
             int bookingID = Convert.ToInt32(listView1.SelectedItems[0].SubItems[0].Text);
-            using (var ctx = new Context())
+            using (var ctx = new Context(Properties.Settings.Default.sqlDB))
             {
                 Booking booking = ctx.Bookings.Where(b => b.BookingID == bookingID).First();
                 ctx.Bookings.Remove(booking);

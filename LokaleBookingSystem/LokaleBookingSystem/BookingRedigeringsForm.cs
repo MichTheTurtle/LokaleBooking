@@ -45,7 +45,7 @@ namespace LokaleBookingSystem
 
         private void btn_RedigerBooking_Click(object sender, EventArgs e)
         {
-            using (var ctx = new Context())
+            using (var ctx = new Context(Properties.Settings.Default.sqlDB))
             {
                 Lokale lokale2 = (from s in ctx.Lokaler
                                   where s.LokaleNavn == txtBx_Lokale.Text
@@ -66,7 +66,7 @@ namespace LokaleBookingSystem
 
         private void btn_Slet_Click(object sender, EventArgs e)
         {
-            using (var ctx = new Context())
+            using (var ctx = new Context(Properties.Settings.Default.sqlDB))
             {
                 Booking booking = ctx.Bookings.Where(b => b.BookingID == bookingID).First();
                 ctx.Bookings.Remove(booking);

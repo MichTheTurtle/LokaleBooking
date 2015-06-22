@@ -27,7 +27,7 @@ namespace LokaleBookingSystem
         private void btn_book_Click(object sender, EventArgs e)
         {
 
-            using (var ctx = new Context())
+            using (var ctx = new Context(Properties.Settings.Default.sqlDB))
             {
                 Lokale lokale2 = (from s in ctx.Lokaler
                                   where s.LokaleNavn == txtBx_Lokale.Text

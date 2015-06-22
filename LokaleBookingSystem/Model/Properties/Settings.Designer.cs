@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace LokaleBookingSystem.Properties {
+namespace Model.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -20,17 +20,6 @@ namespace LokaleBookingSystem.Properties {
         public static Settings Default {
             get {
                 return defaultInstance;
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=MINNIMOLS-PC\\SQLEXPRESS;Integrated Security=True;Connect Timeout=15;E" +
-            "ncrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubne" +
-            "tFailover=False;MultipleActiveResultSets=True")]
-        public string sqlDB {
-            get {
-                return ((string)(this["sqlDB"]));
             }
         }
     }

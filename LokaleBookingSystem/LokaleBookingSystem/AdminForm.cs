@@ -48,7 +48,7 @@ namespace LokaleBookingSystem
         {
             List<BookingDetails> BookingList = new List<BookingDetails>();
 
-            using (var ctx = new Context())
+            using (var ctx = new Context(Properties.Settings.Default.sqlDB))
             {
                 var bookings = from b in ctx.Bookings select b;
 

@@ -17,10 +17,12 @@ namespace LokaleBookingSystem
         {
             InitializeComponent();
         }
+        
+        
 
         private void btn_Create_Click(object sender, EventArgs e)
         {
-            using (var ctx = new Context())
+            using (var ctx = new Context(Properties.Settings.Default.sqlDB))
             {
                 Lokale lokale = new Lokale() { LokaleNavn = txtBx_Opret.Text };
                 ctx.Lokaler.Add(lokale);
@@ -31,7 +33,7 @@ namespace LokaleBookingSystem
 
         private void btn_Delete_Click(object sender, EventArgs e)
         {
-            using (var ctx = new Context())
+            using (var ctx = new Context(Properties.Settings.Default.sqlDB))
             {
                 Lokale lokale = ctx.Lokaler.Where(b => b.LokaleNavn == txtBx_Slet.Text).First();
                 ctx.Lokaler.Remove(lokale);
@@ -42,7 +44,7 @@ namespace LokaleBookingSystem
 
         private void btn_Save_Click(object sender, EventArgs e)
         {
-            using (var ctx = new Context())
+            using (var ctx = new Context(Properties.Settings.Default.sqlDB))
             {
                 Lokale lokale = (from s in ctx.Lokaler
                                  where s.LokaleNavn == txtBx_RedigerCurrent.Text

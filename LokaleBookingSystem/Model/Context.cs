@@ -10,9 +10,9 @@ namespace Model
     public class Context: DbContext
     {
 
-        public Context() : base() 
+        public Context(string connectionStr) : base(connectionStr) 
         {
- 
+            
         }
 
         public DbSet<Bruger> Brugere { get; set; }

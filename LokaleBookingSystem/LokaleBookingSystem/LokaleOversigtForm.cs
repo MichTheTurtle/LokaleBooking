@@ -32,7 +32,7 @@ namespace LokaleBookingSystem
 
 
 
-            using (var ctx = new Context())
+            using (var ctx = new Context(Properties.Settings.Default.sqlDB))
             {
                 var lokaler = from b in ctx.Lokaler select b;
 
