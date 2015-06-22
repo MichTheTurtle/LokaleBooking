@@ -60,7 +60,7 @@
             this.btn_Rediger_Booking.Name = "btn_Rediger_Booking";
             this.btn_Rediger_Booking.Size = new System.Drawing.Size(93, 23);
             this.btn_Rediger_Booking.TabIndex = 1;
-            this.btn_Rediger_Booking.Text = "Rediger";
+            this.btn_Rediger_Booking.Text = "Se liste";
             this.btn_Rediger_Booking.UseVisualStyleBackColor = true;
             this.btn_Rediger_Booking.Click += new System.EventHandler(this.btn_Rediger_Booking_Click);
             // 

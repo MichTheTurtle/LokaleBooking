@@ -39,6 +39,7 @@
             this.txtBx_Username = new System.Windows.Forms.TextBox();
             this.txtBx_Password = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.btn_back_to_login = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -124,13 +125,23 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(78, 136);
+            this.button1.Location = new System.Drawing.Point(157, 136);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(111, 23);
+            this.button1.Size = new System.Drawing.Size(63, 23);
             this.button1.TabIndex = 10;
             this.button1.Text = "Register";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btn_back_to_login
+            // 
+            this.btn_back_to_login.Location = new System.Drawing.Point(15, 136);
+            this.btn_back_to_login.Name = "btn_back_to_login";
+            this.btn_back_to_login.Size = new System.Drawing.Size(75, 23);
+            this.btn_back_to_login.TabIndex = 11;
+            this.btn_back_to_login.Text = "Tilbage";
+            this.btn_back_to_login.UseVisualStyleBackColor = true;
+            this.btn_back_to_login.Click += new System.EventHandler(this.btn_back_to_login_Click);
             // 
             // RegisterForm
             // 
@@ -138,6 +149,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(228, 166);
+            this.Controls.Add(this.btn_back_to_login);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtBx_Password);
             this.Controls.Add(this.txtBx_Username);
@@ -169,5 +181,6 @@
         private System.Windows.Forms.TextBox txtBx_Username;
         private System.Windows.Forms.TextBox txtBx_Password;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_back_to_login;
     }
 }

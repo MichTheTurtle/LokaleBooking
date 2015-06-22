@@ -39,5 +39,12 @@ namespace LokaleBookingSystem
                 }
             }
         }
+
+        private void btn_back_to_login_Click(object sender, EventArgs e)
+        {
+            System.Threading.Thread loginform = new System.Threading.Thread(() => Application.Run(new LoginForm()));
+            loginform.Start();
+            this.Close();
+        }
     }
 }

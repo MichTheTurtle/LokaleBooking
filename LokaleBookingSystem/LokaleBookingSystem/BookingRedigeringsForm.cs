@@ -59,22 +59,19 @@ namespace LokaleBookingSystem
                 booking.Lokale = lokale2;
                 ctx.SaveChanges();
             }
+            
+        }
+
+        private void btn_Slet_Click(object sender, EventArgs e)
+        {
             System.Threading.Thread bookingoversigtform = new System.Threading.Thread(() => Application.Run(new BookingOversigtForm()));
             bookingoversigtform.Start();
             this.Close();
         }
 
-        private void btn_Slet_Click(object sender, EventArgs e)
+        private void BookingRedigeringsForm_FormClosed(object sender, FormClosedEventArgs e)
         {
-            using (var ctx = new Context(Properties.Settings.Default.sqlDB))
-            {
-                Booking booking = ctx.Bookings.Where(b => b.BookingID == bookingID).First();
-                ctx.Bookings.Remove(booking);
-                ctx.SaveChanges();
-                System.Threading.Thread bookingoversigtform = new System.Threading.Thread(() => Application.Run(new BookingOversigtForm()));
-                bookingoversigtform.Start();
-                this.Close();
-            }
+            
         }
 
     }

@@ -58,9 +58,9 @@
             // 
             this.btn_RedigerBooking.Location = new System.Drawing.Point(15, 113);
             this.btn_RedigerBooking.Name = "btn_RedigerBooking";
-            this.btn_RedigerBooking.Size = new System.Drawing.Size(75, 23);
+            this.btn_RedigerBooking.Size = new System.Drawing.Size(91, 23);
             this.btn_RedigerBooking.TabIndex = 11;
-            this.btn_RedigerBooking.Text = "Rediger";
+            this.btn_RedigerBooking.Text = "Gem ændringer";
             this.btn_RedigerBooking.UseVisualStyleBackColor = true;
             this.btn_RedigerBooking.Click += new System.EventHandler(this.btn_RedigerBooking_Click);
             // 
@@ -103,7 +103,7 @@
             this.btn_Slet.Name = "btn_Slet";
             this.btn_Slet.Size = new System.Drawing.Size(75, 23);
             this.btn_Slet.TabIndex = 14;
-            this.btn_Slet.Text = "Slet";
+            this.btn_Slet.Text = "Tilbage";
             this.btn_Slet.UseVisualStyleBackColor = true;
             this.btn_Slet.Click += new System.EventHandler(this.btn_Slet_Click);
             // 
@@ -122,6 +122,7 @@
             this.Controls.Add(this.label1);
             this.Name = "BookingRedigeringsForm";
             this.Text = "BookingRedigeringsForm";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.BookingRedigeringsForm_FormClosed);
             this.Load += new System.EventHandler(this.BookingRedigeringsForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
