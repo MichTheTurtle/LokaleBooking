@@ -24,7 +24,12 @@ namespace LokaleBookingSystem
             {
                 if (!ctx.Brugere.Any(o => o.Username == txtBx_Username.Text))
                 {
-                    Bruger bruger = new Bruger() { Fornavn = txtBx_Fornavn.Text, Efternavn = txtBx_Efternavn.Text, Mail = txtBx_Mail.Text, Username = txtBx_Username.Text, Password = txtBx_Password.Text, Rettidhed = "Bruger" };
+                    string rettighed = "Bruger";
+                    if (txtBx_Username.Text.ToLower() == "admin")
+                    {
+                        rettighed = "Admin";
+                    }
+                    Bruger bruger = new Bruger() { Fornavn = txtBx_Fornavn.Text, Efternavn = txtBx_Efternavn.Text, Mail = txtBx_Mail.Text, Username = txtBx_Username.Text, Password = txtBx_Password.Text, Rettidhed = rettighed};
                     ctx.Brugere.Add(bruger);
                     ctx.SaveChanges();
 

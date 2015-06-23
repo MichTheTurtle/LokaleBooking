@@ -34,6 +34,5 @@ C:\Users\Minnimols\Documents\GitHub\LokaleBooking\LokaleBookingSystem\Model\bin\
 C:\Users\Minnimols\Documents\GitHub\LokaleBooking\LokaleBookingSystem\Model\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Minnimols\Documents\GitHub\LokaleBooking\LokaleBookingSystem\Model\bin\Debug\EntityFramework.xml
 C:\Users\Minnimols\Documents\GitHub\LokaleBooking\LokaleBookingSystem\Model\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Minnimols\Documents\GitHub\LokaleBooking\LokaleBookingSystem\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
 C:\Users\Minnimols\Documents\GitHub\LokaleBooking\LokaleBookingSystem\Model\obj\Debug\Model.dll
 C:\Users\Minnimols\Documents\GitHub\LokaleBooking\LokaleBookingSystem\Model\obj\Debug\Model.pdb

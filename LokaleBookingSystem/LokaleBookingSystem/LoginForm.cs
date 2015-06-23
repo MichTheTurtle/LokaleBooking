@@ -30,7 +30,6 @@ namespace LokaleBookingSystem
 
         private void btn_Login_Click(object sender, EventArgs e)
         {
-
             using (var ctx = new Context(Properties.Settings.Default.sqlDB))
             {
                 if (ctx.Brugere.Any(o => o.Username == txtBx_BrugerNavn.Text))
